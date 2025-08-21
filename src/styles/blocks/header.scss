@@ -1,0 +1,29 @@
+// #region header
+.header {
+  box-sizing: border-box;
+  background-image: url('../images/header-bg-mobile.png');
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__title {
+  margin: 0;
+  color: white;
+  font-style: bold;
+  font-weight: 700;
+  vertical-align: middle;
+  letter-spacing: 0px;
+  line-height: 100%;
+  font-size: 36px;
+}
+
+.header__bottom {
+  padding: 0 20px 40px;
+}
+
+// #endregion header
