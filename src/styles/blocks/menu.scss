@@ -8,6 +8,7 @@
 
   &__top {
       margin-bottom: 32px;
+  }
 
   &__content {
   @include contentPaddingInline;
@@ -42,5 +43,4 @@
   &__nav {
     margin-bottom: 48px;
   }
-}
 }
