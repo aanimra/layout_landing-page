@@ -16,17 +16,24 @@
     font-style: bold;
     font-weight: 700;
     vertical-align: middle;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     line-height: 100%;
     font-size: 36px;
+
+    @include on-tablet {
+      font-size: 40px;
+    }
   }
 
   &__bottom {
     padding-bottom: 40px;
-    @include contentPaddingInline;
+
+    @include content-padding-inline;
+
+    @include on-tablet {
+      padding-bottom: 64px;
+    }
   }
 }
-
-
 
 // #endregion header

@@ -1,33 +1,32 @@
 .menu {
   box-sizing: border-box;
-
   height: 100vh;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   font-weight: bold;
   text-transform: uppercase;
 
   &__top {
-      margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include content-padding-inline;
+
+    padding-block: 24px;
+
+    @include on-tablet {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 56px;
+  }
+
+  &__nav {
+    margin-bottom: 48px;
   }
 
   &__content {
-  @include contentPaddingInline;
-  }
-
-  &__content__bar {
-    padding-inline: 20px;
-  }
-
-  &__call-to-order {
-    width: fit-content;
-    padding-bottom: 3px;
-    border-bottom: 1px solid #1B2129;
-    font-size: 16px;
-    list-style: 140%;
-    letter-spacing: 2px;
-    display: block;
-    color: inherit;
-    text-decoration: none;
+    @include content-padding-inline;
   }
 
   &__phone-number {
@@ -40,7 +39,19 @@
     text-decoration: none;
   }
 
-  &__nav {
-    margin-bottom: 48px;
+  &__call-to-order {
+    width: fit-content;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $main-text-color;
+    font-size: 16px;
+    list-style: 140%;
+    letter-spacing: 2px;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__content__bar {
+    padding-inline: 0;
   }
 }
