@@ -1,12 +1,15 @@
 // #region header
+@use '../utils/mixins' as *;
+
 .header {
+  display: none !important;
   box-sizing: border-box;
   background-image: url('../images/header-bg-mobile.png');
   background-size: cover;
   height: 100vh;
   background-position: center;
 
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: space-between;
 
