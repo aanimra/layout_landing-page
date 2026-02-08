@@ -1,0 +1,37 @@
+@use '../utils/mixins' as *;
+
+.about-us {
+  @include page-grid;
+
+  &__title {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / span 5;
+    }
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+        grid-column: 4 / 7;
+      }
+
+    @include on-desktop {
+      grid-column: 8 / span 5;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+  }
+}

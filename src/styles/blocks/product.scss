@@ -1,5 +1,13 @@
+@use '../utils/mixins' as *;
+
 .product {
- &__photo{
-  width: 100%;
- }
+  &__photo {
+    width: 100%;
+
+    @include on-tablet {
+      display: block;
+      height: auto;
+      max-width: none;
+    }
+  }
 }

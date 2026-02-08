@@ -1,4 +1,4 @@
-@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 @mixin on-tablet {
   @media (min-width: $tablet-min-width) {
@@ -26,10 +26,30 @@
   }
 }
 
+.container {
+  @include content-padding-inline;
+}
+
 @mixin hover($property, $toValue) {
   transition: #{$property} $effect-duration;
 
   &:hover {
     #{$property}: $toValue;
   }
+}
+
+@mixin page-grid {
+    --columns: 2;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(var(--columns), 1fr);
+
+    @include on-tablet {
+      --columns: 6;
+      column-gap: 24px;
+    }
+
+    @include on-desktop {
+      --columns: 12;
+    }
 }
