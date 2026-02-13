@@ -1,14 +1,17 @@
-.main{
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.main {
   background-color: #fff;
 
-  &__content{
-    display: grid;
-    row-gap: 96px;
-    padding-block: 96px;
+  &__content {
+    display: block;
+    padding-top: 64px;
+    padding-bottom: 0;
+    row-gap: 0;
 
     @include on-tablet {
       padding-block: 120px;
-      row-gap: 120px;
     }
   }
 }

@@ -1,6 +1,7 @@
 @use './utils/variables' as *;
 @use './utils/mixins' as *;
 @use 'blocks/page';
+@use 'blocks/main';
 @use 'blocks/header';
 @use 'blocks/footer';
 @use 'blocks/menu';
@@ -8,4 +9,10 @@
 @use 'blocks/top-bar';
 @use 'blocks/icon';
 @use 'blocks/recommended';
+@use 'blocks/product';
 @use 'blocks/about-us';
+@use 'blocks/categories';
+@use 'blocks/section-title';
+@use 'blocks/button';
+@use 'blocks/contact-us';
+@use 'blocks/input';

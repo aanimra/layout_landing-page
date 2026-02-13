@@ -1,0 +1,59 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  width: 280px;
+  height: 56px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+
+  color: #FFFFFF;
+  background-color: $main-orange;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color $effect-duration;
+
+  &:hover {
+    background-color: $main-text-color;
+  }
+
+  &:active {
+    background-color: $main-button-active-color;
+  }
+
+  @include on-tablet {
+    width: 600px;
+  }
+
+  @include on-desktop {
+    width: 324px;
+  }
+
+  &--form {
+    background-color: $main-text-color;
+    height: 56px;
+    width: 100%;
+
+    &:hover {
+      background-color: $main-button-active-color;
+    }
+
+    @include on-tablet {
+      width: 600px;
+    }
+
+    @include on-desktop {
+      width: 498px;
+    }
+  }
+}

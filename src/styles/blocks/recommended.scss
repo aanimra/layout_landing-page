@@ -2,8 +2,19 @@
 @use '../utils/variables' as *;
 
 .recommended {
+  margin-bottom: 64px;
+
+  @include on-tablet {
+    margin-bottom: 80px;
+  }
+
+  @include on-desktop {
+    margin-bottom: 120px;
+  }
+
   &__products {
     @include page-grid;
+
     row-gap: 40px;
   }
 
