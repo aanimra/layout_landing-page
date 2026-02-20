@@ -11,7 +11,8 @@
     row-gap: 0;
 
     @include on-tablet {
-      padding-block: 120px;
+      padding-top: 120px;
+      padding-bottom: 0;
     }
   }
 }

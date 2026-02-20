@@ -1,4 +1,5 @@
 @use '../utils/mixins' as *;
+@use '../utils/variables' as *;
 
 .categories {
   margin-bottom: 96px;
@@ -24,10 +25,13 @@
 .category {
   &__photos {
     @include page-grid;
+
     margin-bottom: 16px;
   }
 
   &__link {
+    overflow: hidden;
+
     @include on-tablet {
       grid-column: span 3;
     }
@@ -42,6 +46,8 @@
     height: 100%;
     object-fit: cover;
     display: block;
+
+    @include hover(transform, scale(1.05));
   }
 
   &__title {

@@ -1,5 +1,9 @@
+@use '../utils/mixins' as *;
+
 .product {
   &__photo {
+    @include hover(transform, scale(1.05));
+
     width: 100%;
     display: block;
   }
