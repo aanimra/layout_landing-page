@@ -30,6 +30,10 @@
     border-color: $main-orange;
   }
 
+  &:-webkit-autofill {
+    transition: background-color 5000s, color 5000s;
+  }
+
   &--textarea {
     height: 120px;
     resize: none;
